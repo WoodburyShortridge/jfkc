@@ -1,0 +1,36 @@
+# Site settings
+title:       Artful Innovation | Inclusive Design and Technology
+email:       whshortridge@gmail.com
+author:      Woodbury Shortridge
+description: "A Jean Kennedy Smith Arts and Disability Program | July 20 – August 31, 2017"
+baseurl:     ""
+#url:         ""
+date_format: "%b %-d, %Y"
+permalink: none
+
+# Google services
+
+google_analytics:
+# google_verification:
+
+# Categories to loop
+lessons :
+  - pascal
+  - pasir
+
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+
+# Build settings
+markdown:     kramdown
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+sass:
+  style: compressed
+gems:
+  - jekyll-sitemap
+  - jekyll-feed

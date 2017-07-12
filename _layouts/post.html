@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include header.html %}
+    <main>
+      <nav>
+        <div class="row grey lighten-3">
+          <div class="nav-wrapper">
+            <div class="container">
+              <a href="./" class="breadcrumb waves-effect">Home</a>
+              <a href="#!" class="breadcrumb waves-effect">{{page.title}}</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <article class="section">
+          <div class="row">
+            <div class="col l4 hide-on-med-and-down">
+              {% include sidenav.html %}
+            </div>
+            <div class="col l8 s12 m12" id="main">
+              <h3 class="grey-text text-darken-4">{{page.title}}</h3>
+              <h4 class="grey-text text-darken-4">{{page.subtitle}}</h4>
+              {{ content }}
+              {% if page.link == null %}
+              {% else %}
+                <a class="waves-effect waves-red btn-flat red-text text-darken-3" href="{{page.link}}">{{page.text}}</a>
+              {% endif %}
+
+              {% if page.image == null %}
+              {% else %}
+              <img src="./img/full/{{page.image}}" alt="{{page.alt}}">
+              {% endif %}
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    {% include footer.html %}
+    {% include script.html %}
+  </body>
+</html>

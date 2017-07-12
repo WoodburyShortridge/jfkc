@@ -1,0 +1,9 @@
+<div class="collection">
+	{% for post in site.posts %}
+		{% if page.title == post.title %}
+			<a href="{{site.baseurl}}{{post.url}}" class="collection-item grey-text text-darken-4 active waves-effect">{{ post.title }}</a>
+		{% else %}
+	  		<a href="{{site.baseurl}}{{post.url}}" class="collection-item grey-text text-darken-4 waves-effect">{{ post.title }}</a>
+	  	{% endif %}
+	{% endfor %}
+</div>
