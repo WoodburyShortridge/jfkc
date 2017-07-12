@@ -13,9 +13,11 @@ var offset=300,
 scrollDuration=300;
     $(window).scroll(function() {
     if ($(this).scrollTop() > offset) {
-        $('.top').fadeIn(250);
+        //$('.top').fadeIn(250);
+        $('.top').removeClass("scale-out").addClass("scale-in");
         } else {
-	$('.top').fadeOut(250);
+	//$('.top').fadeOut(250);
+  $('.top').removeClass('scale-in').addClass("scale-out");
 	}
 });
 
