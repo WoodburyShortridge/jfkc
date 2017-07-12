@@ -3,7 +3,7 @@ subtitle: Neri Oxman, MIT Media Lab
 description: Carpal	Skin	is	a	prototype	for	a protective	glove	to	protect	against Carpal	Tunnel	Syndrome.
 image:
 thumbnail:
-link: h8p://web.media.mit.edu/~neri/site/projects/carpalskin/carpalskin.html
+link: http://web.media.mit.edu/~neri/site/projects/carpalskin/carpalskin.html
 text: Neri Oxman's Website
 alt:
 ---
