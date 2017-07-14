@@ -17,17 +17,18 @@ $xlarge: "only screen and (min-width : 1125px)";
 .sm-logo {
   will-change: transition, opacity;
   max-height: 50px;
-  opacity: 0.8;
+  opacity: 0.7;
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out;
   -o-transition: opacity .25s ease-in-out;
   -ms-transition: opacity .25s ease-in-out;
   transition: opacity .25s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
 }
-.sm-logo:hover {
-  opacity: 1;
-}
+
 .full {
   padding: 0rem !important;
 }
@@ -140,31 +141,29 @@ article img, article video {
   margin-bottom: 2rem;
   z-index: 1;
 }
-.card .btn-flat {
-  margin: 0px 6px 10px 10px;
-  border: 1px solid;
-}
-.card .card-content {
-  padding: .75rem;
+.card {
+  .btn-flat {
+    margin: 0px 6px 10px 10px;
+    border: 1px solid;
+  }
+  .card-content {
+    padding: .75rem;
+  }
 }
 .breadcrumb, .breadcrumb:last-child, .breadcrumb:before,  {
     color: #212121;
 }
-.collection a.collection-item:not(.active):hover {
+.collection {
+  a.collection-item:not(.active):hover {
     background-color: #EEEEEE;
     box-shadow: 2px 1px 2px 0px rgba(0, 0, 0, 0.02), 0 2px 10px 0 rgba(0, 0, 0, 0.05);
-}
-.collection .collection-item.active {
+  }
+  .collection-item.active {
     background-color: #424242;
     color: #fafafa !important;
-}
-.collection {
-  z-index: 1;
-
-  .collection-item {
-    z-index: 1;
   }
 }
+
 .off-screen {
   left: -100vw;
   position: absolute;
@@ -181,11 +180,11 @@ article img, article video {
   transform: translateY(-10em);
   transition: transform .2s ease-in-out,
               opacity .2s ease-in-out;
-}
 
-.skip-link:focus {
-  opacity: 1;
-  transform: translateY(0em);
+  &:focus {
+    opacity: 1;
+    transform: translateY(0em);
+  }
 }
 blockquote {
     border-left: 5px solid #424242;
@@ -193,15 +192,15 @@ blockquote {
 .divider {
     margin-top: 2rem;
 }
-footer.page-footer .footer-copyright {
-  height: 100%;
-  line-height: 18px;
-}
 footer {
   box-shadow: 0 -2px 5px 0 rgba(0,0,0,0.16), 0 -2px 10px 0 rgba(0,0,0,0.12);
   a:hover {
       text-decoration: underline;
       color: #fff;
+  }
+  .page-footer .footer-copyright {
+    height: 100%;
+    line-height: 18px;
   }
 }
 .top{
@@ -212,11 +211,10 @@ footer {
   right: 1.5em;
   text-decoration: none;
   background-color: #222 !important;
-}
-
-.top:hover{
-  opacity:1;
-  transition:1s;
+  &:hover{
+    opacity:1;
+    transition:1s;
+  }
 }
 .btn-floating.btn-large i {
   line-height: normal;
@@ -252,7 +250,6 @@ footer {
       transition: width .5s ease, background-color .5s ease;
       margin-top: -1px;
       margin-bottom: -2px;
-      z-index: 1;
       }
         &:hover:after {
         width: 100%;
