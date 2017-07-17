@@ -1,5 +1,5 @@
 ---
-title: Raised Line Drawings of the LightHouse
+title: Raised Line Drawings
 subtitle: LightHouse for the Blind and Visually Impaired
 description: Chris Downey is an architect, planner, and consultant who is blind and uses raised-line drawings in his work.
 image: Downey.png
