@@ -226,6 +226,12 @@ footer {
   color: #CC0000 !important;
 }
 .card-content {
+  p {
+    margin: .3rem 0 !important;
+  }
+  img {
+    margin-bottom: .3rem;
+  }
   a {
   text-decoration: none;
   color: #CC0000 !important;
@@ -240,24 +246,17 @@ footer {
 }
 
 .sliding {
-    display: inline-block;
-    position: relative;
-
-      &:after {
-      content: '';
-      display: block;
-      margin: auto;
-      height: 1px;
-      width: 0px;
-      background: transparent;
-      transition: width .5s ease, background-color .5s ease;
-      margin-top: -1px;
-      margin-bottom: -2px;
-      }
-        &:hover:after {
-        width: 100%;
-        background: #CC0000;
-        }
+    transition: background-size 0.5s ease 0.2s;
+    width: calc(100%);
+    background-image: linear-gradient(transparent calc(100% - 1px), #CC0000 1px);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: 0% 100%;
+    display: inline;
+    &:hover {
+      cursor: pointer;
+      background-size: 100% 100%;
+    }
 }
 
 .trim {

@@ -27,7 +27,7 @@ event.preventDefault();
     $('html, body').animate({
     scrollTop: 0}, scrollDuration);
  })
- 
+
 /*
 //Fix jekyll lowercase Mi.mu
 $("h3.red-text, h3.grey-text, a.collection-item, a.breadcrumb").each(function() {
@@ -36,5 +36,13 @@ $("h3.red-text, h3.grey-text, a.collection-item, a.breadcrumb").each(function() 
     $(this).text(text);
 });
 */
+
+// shadow on link hover
+$('.sliding').hover(function() {
+  $(this).closest('.card').addClass('z-depth-4');
+}, function() {
+  // on mouseout
+  $(this).closest('.card').removeClass('z-depth-4');
+});
 
 console.log("Hello world. Site by Woodbury Shortridge - whshortridge@gmail.com");
