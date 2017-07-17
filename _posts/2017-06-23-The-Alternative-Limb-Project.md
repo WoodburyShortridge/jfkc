@@ -10,6 +10,7 @@ text: Alternative Limb Website
 alt: A woman sporting Sophie de Oliveira Barata's transparent and gold Alternative Limb
 alt2: A woman crossing arms in front of her face. One arm is a transparent and gold prosthetic arm.
 alt3: A woman seating sideways on designer chair wearing fashionable clothes and transparent and gold Alternative Limb
+credit: Omkaar Kotedia
 ---
 Sophie de Oliveira Barata, founder of The
 Alternative Limb Project, creates her
@@ -24,5 +25,3 @@ and other technologies to create each
 piece of art.
 
 "Syncronised," by The Alternative Limb Project, is a collaboration between Sophie de Oliveira Barata and Dani Clode, with support from Jason Taylor.  This arm was designed for Kelly Knox, who was born without a forearm. Knox is an internationally recognized model, performance artist, and advocate for diversity in fashion.  De Oliveira Barata and Clode worked alongside Knox to design a new kind of prosthetic for her.  The arm is made out of electroplated gold carbon fiber and clear acrylic layers.  Together they form a layered, mirrored re-creation of her biological arm.  The limb's internal electronics read her pulse and then send a signal of her ticking heart beat to the wrist layer.  The prosthesis can also tick when she is not wearing it.  The limb was designed as jewelry and body sculpture.  It has two removable hands -- one clear and one blue. 
-
-Photo credit: Omkaar Kotedia
