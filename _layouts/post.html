@@ -33,9 +33,12 @@
                 <a class="waves-effect waves-red btn-flat red-text text-darken-3" href="{{page.link}}">{{page.text}}</a>
               {% endif %}
 
-              {% if page.image == null %}
-              {% else %}
+              {% if page.image %}
               <img src="./img/full/{{page.image}}" alt="{{page.alt}}">
+              {% endif %}
+
+              {% if page.video %}
+              <div class="video"><div class="video-container">{{page.video}}</div></div>
               {% endif %}
             </div>
           </div>

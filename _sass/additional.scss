@@ -124,9 +124,12 @@ article {
   font-size: 1.2rem;
   color: rgba(0,0,0,0.7);
 }
-article img, article video {
+article img {
   width: 100%;
   height: auto;
+}
+.video {
+  padding-top: 1.5rem;
 }
 .page-footer svg {
   margin: -9px 5px;
