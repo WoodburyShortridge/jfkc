@@ -6,6 +6,7 @@ thumbnail: fuse.PNG
 link: https://fuseproject.com/work/superflex/aura-powered-suit/?focus=overview
 text: Fuseproject Website
 alt: A woman wears the Aura Powered Suit, a light gray body suit with green built-in support bands along the back and knees.
+video: <iframe width="560" height="315" src="https://www.youtube.com/embed/lnpNGRd7yyo" frameborder="0" allowfullscreen></iframe>
 ---
 The Aura Powered Suit is powered
 clothing designed to assist movement
