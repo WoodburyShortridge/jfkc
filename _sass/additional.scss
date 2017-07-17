@@ -157,6 +157,9 @@ article img {
     color: #212121;
 }
 .collection {
+
+  margin-top: 1.7rem;
+
   a.collection-item:not(.active):hover {
     background-color: #EEEEEE;
     box-shadow: 2px 1px 2px 0px rgba(0, 0, 0, 0.02), 0 2px 10px 0 rgba(0, 0, 0, 0.05);
