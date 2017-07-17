@@ -28,18 +28,22 @@
               <h4 class="grey-text text-darken-4">{{page.subtitle}}</h4>
               {% endif %}
               {{ content }}
-              {% if page.link == null %}
-              {% else %}
+              {% if page.link %}
                 <a class="waves-effect waves-red btn-flat red-text text-darken-3" href="{{page.link}}">{{page.text}}</a>
+              {% endif %}
+
+              {% if page.link2 %}
+              <a class="waves-effect waves-red btn-flat red-text text-darken-3" href="{{page.link2}}">{{page.text2}}</a>
+              {% endif %}
+
+              {% if page.video %}
+              <div class="video"><div class="video-container">{{page.video}}</div></div>
               {% endif %}
 
               {% if page.image %}
               <img src="./img/full/{{page.image}}" alt="{{page.alt}}">
               {% endif %}
 
-              {% if page.video %}
-              <div class="video"><div class="video-container">{{page.video}}</div></div>
-              {% endif %}
             </div>
           </div>
         </article>
