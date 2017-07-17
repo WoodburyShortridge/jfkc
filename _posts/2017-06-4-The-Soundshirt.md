@@ -1,5 +1,5 @@
 ---
-subtitle: cuteCircuit
+subtitle: CuteCircuit
 description: The Soundshirt allows deaf audience members to experience live music.
 image: CuteCircuit_SoundShirt_Emotcrop.png
 thumbnail: CuteCircuit_SoundShirt_Emotcrop.png
