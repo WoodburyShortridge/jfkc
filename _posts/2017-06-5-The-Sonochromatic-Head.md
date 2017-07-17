@@ -1,8 +1,8 @@
 ---
 subtitle: Neil Harbisson
 description: The Sonochromatic Head illustrates an eyeborg antenna that allows Harbisson to identify colors through sound frequencies.
-image: Cyborg-Sculpture.png
-thumbnail: Cyborg-Sculpture.png
+image: Cyborg-sculpture.png
+thumbnail: Cyborg-sculpture.png
 link: http://www.harbisson.com
 text: Neil Harbisson's Website
 alt: A bronze sculpture of Neil Harbisson with his eyeborg antenna. The antenna goes from inside the back of his head to hanging over his forehead.
