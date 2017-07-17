@@ -3,9 +3,13 @@ subtitle: Sophie de Oliveira Barata
 description: Sophie de Oliveira Barata, founder of The Alternative Limb Project, creates her art within prosthetic arms and legs. This arm was designed for model Kelly Knox who was born without a forearm.
 image: altlimb.png
 thumbnail: altlimb.png
+image2: altlimb2.png
+image3: altlimb3.png
 link: http://www.thealternativelimbproject.com
 text: Alternative Limb Website
 alt: A woman sporting Sophie de Oliveira Barata's transparent and gold Alternative Limb
+alt2: A woman crossing arms in front of her face. One arm is a transparent and gold prosthetic arm.
+alt3: A woman seating sideways on designer chair wearing fashionable clothes and transparent and gold Alternative Limb
 ---
 Sophie de Oliveira Barata, founder of The
 Alternative Limb Project, creates her
