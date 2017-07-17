@@ -27,12 +27,14 @@ event.preventDefault();
     $('html, body').animate({
     scrollTop: 0}, scrollDuration);
  })
-
+ 
+/*
 //Fix jekyll lowercase Mi.mu
 $("h3.red-text, h3.grey-text, a.collection-item, a.breadcrumb").each(function() {
     var text = $(this).text();
     text = text.replace("Mi.mu", "Mi.Mu");
     $(this).text(text);
 });
+*/
 
 console.log("Hello world. Site by Woodbury Shortridge - whshortridge@gmail.com");

@@ -24,7 +24,9 @@
             </div>
             <div class="col l8 s12 m12" id="main">
               <h3 class="grey-text text-darken-4">{{page.title}}</h3>
+              {% if page.title %}
               <h4 class="grey-text text-darken-4">{{page.subtitle}}</h4>
+              {% endif %}
               {{ content }}
               {% if page.link == null %}
               {% else %}
