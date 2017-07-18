@@ -24,41 +24,47 @@ event.preventDefault();
     scrollTop: 0}, scrollDuration);
  })
 
-// shadow on link hover
-$('.sliding').hover(function() {
-  $(this).closest('.card').addClass('z-depth-4');
-}, function() {
-  // on mouseout
-  $(this).closest('.card').removeClass('z-depth-4');
-});
-
 //scroll vars
 function isScrolledIntoView(elem) {
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();
-    var elemTop = $(elem).offset().top + 75;
-    var elemBottom = elemTop + $(elem).height();
+    var elemTop = $(elem).offset().top -150;
+    var elemBottom = elemTop + $(elem).height() +250;
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
-//card highlights
+//card highlights mobile
 function highlightCards() {
   $(window).scroll(function () {
-      $('.card').each(function () {
+      $('.sliding').each(function () {
           if (isScrolledIntoView(this) === true) {
-              $(this).addClass('z-depth-4');
-              $('h3', this).addClass('hover');
+              $(this).addClass('hover');
+              $(this).closest('.card').addClass('z-depth-4');
           }
           else {
-            $(this).removeClass('z-depth-4');
-            $('h3', this).removeClass('hover');
+            $(this).removeClass('hover');
+            $(this).closest('.card').removeClass('z-depth-4');
           }
       });
   });
 };
-//mobile only
+// desktop shadow on link hover
+function hoverCards() {
+  $('.sliding').hover(function() {
+    $(this).addClass('hover');
+    $(this).closest('.card').addClass('z-depth-4');
+  }, function() {
+    // on mouseout
+    $(this).removeClass('hover');
+    $(this).closest('.card').removeClass('z-depth-4');
+  });
+};
+
+//mobile vs desktop
 $(window).resize(function() {
     if($(window).width() < 600) {
       highlightCards ();
+    } else {
+      hoverCards();
     };
 }).resize();
 
