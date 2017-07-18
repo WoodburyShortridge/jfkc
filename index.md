@@ -29,7 +29,7 @@ layout: home
 	      	{% else %}
 	  	 	   <img src="img/thumb/{{post.thumbnail}}" alt="{{post.alt}}">
 	  	 	{% endif %}
-	        <a href="{{post.url}}"><h3 class="red-text text-darken-3 sliding">{{ post.title}}</h3></a>
+	        <a href="{{site.baseurl}}{{post.url}}"><h3 class="red-text text-darken-3 sliding">{{ post.title}}</h3></a>
 	        <p>{{ post.description}}</p>
 	      </div>
 	    </div>
