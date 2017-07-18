@@ -249,7 +249,7 @@ footer {
 }
 
 .sliding {
-    transition: background-size 0.5s ease 0.2s;
+    transition: background-size 0.5s ease 0.1s;
     width: calc(100%);
     background-image: linear-gradient(transparent calc(100% - 1px), #CC0000 1px);
     background-repeat: no-repeat;
@@ -260,6 +260,10 @@ footer {
       cursor: pointer;
       background-size: 100% 100%;
     }
+}
+
+.hover {
+  background-size: 100% 100%;
 }
 
 .trim {

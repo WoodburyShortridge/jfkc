@@ -2,12 +2,9 @@
 $('.head-col').matchHeight();
 $('.card-col').matchHeight();
 $('.text-col').matchHeight();
-
-
 //external links
 $("a[href^='http://']").attr("target","_blank");
 $("a[href^='https://']").attr("target","_blank");
-
 //back to top
 var offset=300,
 scrollDuration=300;
@@ -20,22 +17,12 @@ scrollDuration=300;
   $('.top').removeClass('scale-in').addClass("scale-out");
 	}
 });
-
 //smooth animation
 $('.top').click(function(event) {
 event.preventDefault();
     $('html, body').animate({
     scrollTop: 0}, scrollDuration);
  })
-
-/*
-//Fix jekyll lowercase Mi.mu
-$("h3.red-text, h3.grey-text, a.collection-item, a.breadcrumb").each(function() {
-    var text = $(this).text();
-    text = text.replace("Mi.mu", "Mi.Mu");
-    $(this).text(text);
-});
-*/
 
 // shadow on link hover
 $('.sliding').hover(function() {
@@ -44,5 +31,35 @@ $('.sliding').hover(function() {
   // on mouseout
   $(this).closest('.card').removeClass('z-depth-4');
 });
+
+//scroll vars
+function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+    var elemTop = $(elem).offset().top + 75;
+    var elemBottom = elemTop + $(elem).height();
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+//card highlights
+function highlightCards() {
+  $(window).scroll(function () {
+      $('.card').each(function () {
+          if (isScrolledIntoView(this) === true) {
+              $(this).addClass('z-depth-4');
+              $('h3', this).addClass('hover');
+          }
+          else {
+            $(this).removeClass('z-depth-4');
+            $('h3', this).removeClass('hover');
+          }
+      });
+  });
+};
+//mobile only
+$(window).resize(function() {
+    if($(window).width() < 600) {
+      highlightCards ();
+    };
+}).resize();
 
 console.log("Hello world. Site by Woodbury Shortridge - whshortridge@gmail.com");
