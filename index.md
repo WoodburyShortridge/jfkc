@@ -1,6 +1,6 @@
 ---
 title: Artful Innovation | Inclusive Design and Technology
-subtitle: A Jean Kennedy Smith Arts and Disability Program | July 20 – August 31, 2017
+subtitle: A Jean Kennedy Smith Arts and Disability Program | July 20 – August 30, 2017
 layout: home
 ---
 <div class="row">
