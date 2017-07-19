@@ -64,7 +64,7 @@ function hoverCards() {
 //mobile vs desktop
 $(window).resize(function() {
     $('.sliding').removeClass('hover');
-    $('card').removeClass('z-depth-4');
+    $('.card').removeClass('z-depth-4');
     if($(window).width() < 600) {
       highlightCards();
     };
