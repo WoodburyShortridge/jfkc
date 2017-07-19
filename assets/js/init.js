@@ -35,35 +35,40 @@ function isScrolledIntoView(elem) {
 //card highlights mobile
 function highlightCards() {
   $(window).scroll(function () {
-      $('.sliding').each(function () {
-          if (isScrolledIntoView(this) === true) {
-              $(this).addClass('hover');
-              $(this).closest('.card').addClass('z-depth-4');
-          }
-          else {
-            $(this).removeClass('hover');
-            $(this).closest('.card').removeClass('z-depth-4');
-          }
-      });
+    if($(window).width() < 600) {
+        $('.sliding').each(function () {
+            if (isScrolledIntoView(this) === true) {
+                $(this).addClass('hover');
+                $(this).closest('.card').addClass('z-depth-4');
+            }
+            else {
+              $(this).removeClass('hover');
+              $(this).closest('.card').removeClass('z-depth-4');
+            }
+        });
+      };
   });
 };
 // desktop shadow on link hover
 function hoverCards() {
-  $('.sliding').hover(function() {
-    $(this).addClass('hover');
-    $(this).closest('.card').addClass('z-depth-4');
-  }, function() {
-    // on mouseout
-    $(this).removeClass('hover');
-    $(this).closest('.card').removeClass('z-depth-4');
-  });
+    $('.sliding').hover(function() {
+      $(this).addClass('hover');
+      $(this).closest('.card').addClass('z-depth-4');
+    }, function() {
+      // on mouseout
+      $(this).removeClass('hover');
+      $(this).closest('.card').removeClass('z-depth-4');
+    });
 };
 
 //mobile vs desktop
 $(window).resize(function() {
+    $('.sliding').removeClass('hover');
+    $('card').removeClass('z-depth-4');
     if($(window).width() < 600) {
-      highlightCards ();
-    } else {
+      highlightCards();
+    };
+    if ($(window).width() >= 600) {
       hoverCards();
     };
 }).resize();
