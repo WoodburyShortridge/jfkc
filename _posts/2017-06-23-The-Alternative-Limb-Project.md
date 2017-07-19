@@ -7,6 +7,8 @@ image2: altlimb2.png
 image3: altlimb3.png
 link: http://www.thealternativelimbproject.com
 text: Alternative Limb Website
+link2: http://www.daniclodedesign.com/
+text2: Dani Clode Website
 alt: A woman sporting Sophie de Oliveira Barata's transparent and gold Alternative Limb
 alt2: A woman crossing arms in front of her face. One arm is a transparent and gold prosthetic arm.
 alt3: A woman seating sideways on designer chair wearing fashionable clothes and transparent and gold Alternative Limb
