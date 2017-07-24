@@ -1,6 +1,6 @@
 ---
 subtitle: Eone Timepieces, Inc.
-description: The Bradley is a watch that can be touched and seen to tell time, providing equal access for people who are blind or have low vision
+description: The Bradley is a watch that can be touched and seen to tell time, providing equal access for people who are blind or have low vision.
 image: Bradley-2.png
 thumbnail: Bradley-2.png
 link: https://www.eone-time.com
