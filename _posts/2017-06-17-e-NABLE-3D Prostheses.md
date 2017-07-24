@@ -1,7 +1,7 @@
 ---
 title: e-NABLE 3D Prostheses
 subtitle: e-NABLE
-description: The e-NABLE 3D Prostheses are body-powered 3D printable assistive devices for individuals with upper-limb differences.
+description: Free and low-cost 3D printable assistive devices for individuals with upper-limb differences.
 image: Enable.png
 thumbnail: Enable.png
 link: http://enablingthefuture.org/about/
