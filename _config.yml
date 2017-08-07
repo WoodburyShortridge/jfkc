@@ -1,0 +1,36 @@
+# Site settings
+title:       Artful Innovation | Inclusive Design and Technology
+email:       whshortridge@gmail.com
+author:      Woodbury Shortridge
+description: "A Jean Kennedy Smith Arts and Disability Program | July 20 – August 30, 2017"
+baseurl:     "/jfkc"
+#url:         ""
+date_format: "%b %-d, %Y"
+permalink: none
+keywords: kenndy center, jfk, jfkc, human centered design, ihcd, artful innovation, jean Kennedy smith, 2017, disabilities, universal design, inclusive design, innovative technology, art technology, assistive technology, art, technology, ada,
+
+# Google services
+
+google_analytics: UA-102495983-1
+
+# Categories to loop
+lessons :
+  - pascal
+  - pasir
+
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+
+# Build settings
+markdown:     kramdown
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+sass:
+  style: compressed
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
